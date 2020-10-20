@@ -1,4 +1,4 @@
-name: 'Python test workflow'
+name: 'Network rsk node workflow'
 on: push      
 
 jobs:                         
