@@ -16,4 +16,4 @@ jobs:
       with:
         ref: 'master'                         
     - name: 'Print a greeting'                             
-      run:  mscoutermarsh/ascii-art-action@master 
+      run:  echo "Hola first workflow"
