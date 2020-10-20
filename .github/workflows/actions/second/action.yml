@@ -1,13 +1,13 @@
-name: Action from the same repo
-on: push 
-
-jobs:                                 
-  use-your-own-action:                           
-    name: Say Hi using your own action                           
-    runs-on: ubuntu-latest                           
-    steps:                             
-      - uses: actions/checkout@v2
-                                                            
-      - uses: ./.github/workflows/actions/secondAction.yml # the action.yml file is in the root folder                              
-        with:                                
-         user: 'Déborah'
+# action.yml
+name: 'Hey From a GitHub Action'
+description: 'Greet someone'
+inputs:
+  user:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'You'
+runs:
+  using: "composite"
+  steps: 
+    - run: echo Hey ${{ inputs.user }}.
+      shell: bash
