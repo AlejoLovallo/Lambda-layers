@@ -13,9 +13,9 @@ jobs:
       - name: Set up Python 3.8                               
         uses: actions/setup-python@v2                               
         with:                                 
-          python-version: '3.8'          
-                                                    
-      - name: 'Display Python version'                                 
+          python-version: '3.8'
+                                                              
+      - name: 'Test unit test'                                 
         run: |
             pip install pytest
             pip install pytest-cov
