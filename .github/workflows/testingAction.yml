@@ -1,0 +1,13 @@
+name: Action from the same repo
+on: push 
+
+jobs:                                 
+  use-your-own-action:                           
+    name: Say Hi using your own action                           
+    runs-on: ubuntu-latest                           
+    steps:                             
+      - uses: actions/checkout@v2
+                                                            
+      - uses: ./secondAction.yml # the action.yml file is in the root folder                              
+        with:                                
+         user: 'Déborah'

@@ -3,7 +3,7 @@ on: push
 
 jobs:                         
   get-posts-job:                            
-    name: 'Print python message'                           
+    name: 'Test rsk node coneectivity'                           
 
     runs-on: ubuntu-latest     
     steps:                             
