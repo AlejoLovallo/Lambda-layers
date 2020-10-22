@@ -23,8 +23,11 @@ jobs:
       - name: Check out the repository code
         uses: actions/checkout@v2
       
+      - name : Init proyect
+        run: npm init -y 
+
       - name: install dependencies
-        run: npm mongod
+        run: npm install  mongod
     
       - name: Try to exec the script for mongo
         run : node run.js
