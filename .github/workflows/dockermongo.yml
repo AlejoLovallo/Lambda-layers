@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: install dependencies
-        run: npm install 
+        run: npm ci 
     
       - name: Try to exec the script for mongo
         run : node run.js
