@@ -89,10 +89,20 @@ class MongoD {
 
 }
 
+
+async function initialize(){
 let mongoD = new MongoD(process.env.MONGOURI,process.env.DB,process.env.COLLECTION);
 
 await mongoD.connectClient();
 await mongoD.createCollection();
 await mongoD.insertToCollection("test");
 await mongoD.getObjectsFromCollection();
+}
 
+if (!module.parent) {
+    initialize();
+}
+
+module.exports = {
+    initialize,
+};
