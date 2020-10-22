@@ -27,7 +27,7 @@ jobs:
         run: npm init -y 
 
       - name: install dependencies
-        run: npm install  mongod
+        run: npm install mongodb
     
       - name: Try to exec the script for mongo
         run : node run.js
