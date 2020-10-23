@@ -1,6 +1,6 @@
 # Lambda-layers
 
-[![Actions Status](https://github.com/AlejoLovallo/Lamba-layers/workflows/dockermongo/badge.svg)](https://github.com/AlejoLovallo/Lambda-layers/docker-mongo/actions)
+[![Actions Status](https://github.com/AlejoLovallo/Lamba-layers/.github/workflows/Mongo%trial/badge.svg)](https://github.com/AlejoLovallo/Lambda-layers/Mongo%trial/actions)
 
 
 
