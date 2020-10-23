@@ -1,6 +1,6 @@
 # Lambda-layers
 
-[![Actions Status](https://github.com/AlejoLovallo/Lamba-layers/.github/workflows/Mongo%trial/badge.svg)](https://github.com/AlejoLovallo/Lambda-layers/Mongo%trial/actions)
+[![Actions Status](https://github.com/AlejoLovallo/Lamba-layers/.github/workflows/Mongo%20trial/badge.svg)](https://github.com/AlejoLovallo/Lambda-layers/Mongo%20trial/actions)
 
 
 
