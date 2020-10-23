@@ -3,7 +3,7 @@ on: push
 
 jobs:                         
   get-posts-job:                            
-    name: 'Print python message'                           
+    name: 'Test python wiht pytest and pytest-cov'                           
 
     runs-on: ubuntu-latest     
     steps:                             
