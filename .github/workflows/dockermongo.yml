@@ -1,4 +1,4 @@
-name: 'Mongo trial'
+name: Mongo trial
 on: push
 
 jobs:
