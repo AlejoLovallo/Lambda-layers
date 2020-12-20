@@ -3,8 +3,10 @@
 
 gitbook build
 
+git checkout -b gh-pages
+
 # checkout to the gh-pages branch
-git checkout gh-pages
+#git checkout gh-pages
 
 # pull the latest updates
 #git pull origin gh-pages --rebase --> first time not only of course.
