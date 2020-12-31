@@ -1,0 +1,34 @@
+name: 'Mongo python tests'
+on: 
+  push:
+    branches:
+      - develop
+
+jobs:
+  # Label of the container job
+  runner-job:
+    # You must use a Linux environment when using service containers or container jobs
+    runs-on: ubuntu-latest
+    container: python:latest
+
+    # Service containers to run with `runner-job`
+    services:
+      # Label used to access the service container
+      mongo:
+        # Docker Hub image
+        image: mongo:latest
+        #
+        ports:
+          # Opens tcp port 6379 on the host and service container
+          - 27017:27017
+
+    steps:
+      - name: Check out the repository code
+        uses: actions/checkout@v2
+      
+      - name : Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run Tests
+        run: python3 tests/testConnectionMongo.py
+  

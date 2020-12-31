@@ -1,0 +1,19 @@
+{
+  "name": "lambda-layers",
+  "version": "1.0.0",
+  "description": "test to publish to packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejoLovallo/Lambda-layers.git"
+  },
+  "author": "Alejo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejoLovallo/Lambda-layers/issues"
+  },
+  "homepage": "https://github.com/AlejoLovallo/Lambda-layers#readme"
+}

@@ -1,0 +1,23 @@
+# your-repo-name/.github/workflows/pythonTest.yml
+
+
+name: 'First Workflow pyton'
+on: push      
+
+jobs:                         
+  get-posts-job:                            
+    name: 'Print python message'                           
+
+    runs-on: ubuntu-latest     
+    steps:                             
+      - name: 'Check-out the repo under $GITHUB_WORKSPACE'                               
+        uses: actions/checkout@v2         
+                                                  
+      - name: Set up Python 3.8                               
+        uses: actions/setup-python@v2                               
+        with:                                 
+          python-version: '3.8'          
+                                                    
+      - name: 'Display Python version'                                 
+        run: python -c "import sys; print(sys.version)"
+        

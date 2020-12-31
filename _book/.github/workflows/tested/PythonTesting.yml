@@ -1,0 +1,22 @@
+name: 'Python test workflow'
+on: push      
+
+jobs:                         
+  get-posts-job:                            
+    name: 'Test python wiht pytest and pytest-cov'                           
+
+    runs-on: ubuntu-latest     
+    steps:                             
+      - name: 'Check-out the repo under $GITHUB_WORKSPACE'                               
+        uses: actions/checkout@v2         
+                                                  
+      - name: Set up Python 3.8                               
+        uses: actions/setup-python@v2                               
+        with:                                 
+          python-version: '3.8'
+                                                              
+      - name: 'Test unit test'                                 
+        run: |
+            pip install pytest
+            pip install pytest-cov
+            pytest first.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
