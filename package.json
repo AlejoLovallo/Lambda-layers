@@ -4,7 +4,8 @@
   "description": "test to publish to packages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0",
+    "deploy":"npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AlejoLovallo/Lambda-layers/issues"
   },
-  "homepage": "https://github.com/AlejoLovallo/Lambda-layers#readme"
+  "homepage": "https://github.com/AlejoLovallo/Lambda-layers#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@alejolovallo"
+  }
 }
