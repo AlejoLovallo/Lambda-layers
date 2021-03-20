@@ -1,0 +1,19 @@
+# your-repo-name/.github/workflows/first_workflow.yml
+
+name: 'First Workflow'
+
+on: push            
+
+jobs:                         
+
+  first-job:   
+
+    name: 'Say hi'                           
+    runs-on: 'ubuntu-latest'      
+                         
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: 'master'                         
+    - name: 'Print a greeting'                             
+      run:  echo "Hola first workflow"
