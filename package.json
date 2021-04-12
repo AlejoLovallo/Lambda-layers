@@ -1,5 +1,5 @@
 {
-  "name": "@AlejoLovallo/lambda-layers",
+  "name": "@alejolovallo/lambda-layers",
   "version": "0.0.16",
   "description": "test to publish to packages",
   "main": "index.js",
