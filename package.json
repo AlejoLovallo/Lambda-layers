@@ -1,6 +1,6 @@
 {
   "name": "lambda-layers",
-  "version": "1.0.1",
+  "version": "1.0.22",
   "description": "test to publish to packages",
   "main": "index.js",
   "scripts": {
