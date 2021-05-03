@@ -19,5 +19,8 @@
   "homepage": "https://github.com/AlejoLovallo/Lambda-layers#readme",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@alejolovallo"
+  },
+  "dependencies": {
+    "mongodb-backup": "^1.6.9"
   }
 }
